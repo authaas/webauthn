@@ -2,16 +2,16 @@ syntax = "proto3";
 
 package webauthn.public_key_credential;
 
-import "webauthn/challenge.proto";
+import "webauthn/ceremony/challenge.proto";
 import "webauthn/extensions/request.proto";
 import "webauthn/public_key_credential/descriptor.proto";
-import "webauthn/relying_party.proto";
+import "webauthn/relying_party/id.proto";
 import "webauthn/requirement/user_verification.proto";
 
 message RequestOptions {
-  webauthn.Challenge challenge = 1;
+  ceremony.Challenge challenge = 1;
   uint32 timeout = 2;
-  webauthn.RpId rp_id = 3;
+  relying_party.ID rp_id = 3;
   repeated Descriptor allow_credentials = 4;
   requirement.UserVerification user_verification = 5;
   repeated string hints = 6;

@@ -2,11 +2,9 @@ syntax = "proto3";
 
 package webauthn.public_key_credential;
 
-import "webauthn/credential.proto";
-import "webauthn/public_key_credential/type.proto";
+import "webauthn/credential/id.proto";
 
 message Descriptor {
-  webauthn.Credential credential = 1;
-  Type type = 2;
-  repeated string transports = 3;
+  credential.ID credential = 1;
+  repeated string transports = 2;
 }

@@ -4,14 +4,12 @@ package webauthn.ceremony;
 
 import "webauthn/authenticator/attachment.proto";
 import "webauthn/authenticator/attestation/response.proto";
-import "webauthn/credential.proto";
+import "webauthn/credential/id.proto";
 import "webauthn/extensions/response.proto";
-import "webauthn/public_key_credential/type.proto";
 
 message Attestation {
-  webauthn.Credential credential = 1;
-  public_key_credential.Type type = 2;
-  authenticator.Attachment authenticator_attachment = 3;
-  extensions.Response client_extension_results = 4;
-  authenticator.attestation.Response response = 5;
+  credential.ID credential = 1;
+  authenticator.Attachment authenticator_attachment = 2;
+  extensions.Response client_extension_results = 3;
+  authenticator.attestation.Response response = 4;
 }

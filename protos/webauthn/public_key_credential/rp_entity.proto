@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package webauthn.public_key_credential;
 
-import "webauthn/relying_party.proto";
+import "webauthn/relying_party/id.proto";
 
 message RpEntity {
-  webauthn.RpId id = 1;
+  relying_party.ID id = 1;
   string name = 2;
 }
