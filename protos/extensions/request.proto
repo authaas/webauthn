@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package extensions;
+
+// Request is the extension inputs a ceremony's options carry. Opaque.
+message Request {
+  bytes bytes = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package public_key_credential;
+
+import "identity/principal.proto";
+import "identity/profile.proto";
+
+// UserEntity is the user a credential is created for, as the creation
+// options carry it.
+message UserEntity {
+  identity.Principal principal = 1;
+  identity.Profile profile = 2;
+}

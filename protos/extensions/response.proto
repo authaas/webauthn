@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package extensions;
+
+// Response is the client extension outputs a completed ceremony returns. Opaque.
+message Response {
+  bytes bytes = 1;
+}
