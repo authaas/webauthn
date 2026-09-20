@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package public_key_credential;
+package webauthn.public_key_credential;
 
 enum CoseAlgorithm {
   COSE_ALGORITHM_UNSPECIFIED = 0;

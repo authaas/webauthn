@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package extensions;
+package webauthn.extensions;
 
 // Response is the client extension outputs a completed ceremony returns. Opaque.
 message Response {

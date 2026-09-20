@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package requirement;
+package webauthn.requirement;
 
 enum ResidentKey {
   RESIDENT_KEY_UNSPECIFIED = 0;

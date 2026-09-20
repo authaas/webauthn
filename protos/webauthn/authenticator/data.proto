@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package authenticator;
+package webauthn.authenticator;
 
 // Data is the authenticator data of an assertion, as the authenticator
 // produced it: the exact bytes the signature covers together with the client

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package public_key_credential;
+package webauthn.public_key_credential;
 
-import "extensions/request.proto";
-import "public_key_credential/descriptor.proto";
-import "requirement/user_verification.proto";
 import "webauthn/challenge.proto";
+import "webauthn/extensions/request.proto";
+import "webauthn/public_key_credential/descriptor.proto";
 import "webauthn/relying_party.proto";
+import "webauthn/requirement/user_verification.proto";
 
 message RequestOptions {
   webauthn.Challenge challenge = 1;

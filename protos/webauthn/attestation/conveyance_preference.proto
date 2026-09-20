@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package attestation;
+package webauthn.attestation;
 
 enum ConveyancePreference {
   CONVEYANCE_PREFERENCE_UNSPECIFIED = 0;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package public_key_credential;
+package webauthn.public_key_credential;
 
 import "identity/principal.proto";
 import "identity/profile.proto";

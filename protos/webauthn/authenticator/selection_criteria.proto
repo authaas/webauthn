@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package authenticator;
+package webauthn.authenticator;
 
-import "authenticator/attachment.proto";
-import "requirement/resident_key.proto";
-import "requirement/user_verification.proto";
+import "webauthn/authenticator/attachment.proto";
+import "webauthn/requirement/resident_key.proto";
+import "webauthn/requirement/user_verification.proto";
 
 message SelectionCriteria {
   Attachment authenticator_attachment = 1;

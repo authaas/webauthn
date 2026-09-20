@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-package public_key_credential;
+package webauthn.public_key_credential;
 
-import "attestation/conveyance_preference.proto";
-import "authenticator/selection_criteria.proto";
-import "extensions/request.proto";
-import "public_key_credential/descriptor.proto";
-import "public_key_credential/parameters.proto";
-import "public_key_credential/rp_entity.proto";
-import "public_key_credential/user_entity.proto";
+import "webauthn/attestation/conveyance_preference.proto";
+import "webauthn/authenticator/selection_criteria.proto";
 import "webauthn/challenge.proto";
+import "webauthn/extensions/request.proto";
+import "webauthn/public_key_credential/descriptor.proto";
+import "webauthn/public_key_credential/parameters.proto";
+import "webauthn/public_key_credential/rp_entity.proto";
+import "webauthn/public_key_credential/user_entity.proto";
 
 message CreationOptions {
   webauthn.Challenge challenge = 1;

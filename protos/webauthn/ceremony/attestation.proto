@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package ceremony;
+package webauthn.ceremony;
 
-import "authenticator/attachment.proto";
-import "authenticator/attestation/response.proto";
-import "extensions/response.proto";
-import "public_key_credential/type.proto";
+import "webauthn/authenticator/attachment.proto";
+import "webauthn/authenticator/attestation/response.proto";
 import "webauthn/credential.proto";
+import "webauthn/extensions/response.proto";
+import "webauthn/public_key_credential/type.proto";
 
 message Attestation {
   webauthn.Credential credential = 1;

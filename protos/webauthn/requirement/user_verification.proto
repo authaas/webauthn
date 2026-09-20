@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package requirement;
+package webauthn.requirement;
 
 enum UserVerification {
   USER_VERIFICATION_UNSPECIFIED = 0;

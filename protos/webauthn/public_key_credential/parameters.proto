@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package webauthn.public_key_credential;
+
+import "webauthn/public_key_credential/cose_algorithm.proto";
+import "webauthn/public_key_credential/type.proto";
+
+message Parameters {
+  Type type = 1;
+  CoseAlgorithm alg = 2;
+}

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package public_key_credential;
+package webauthn.public_key_credential;
 
-import "public_key_credential/type.proto";
 import "webauthn/credential.proto";
+import "webauthn/public_key_credential/type.proto";
 
 message Descriptor {
   webauthn.Credential credential = 1;

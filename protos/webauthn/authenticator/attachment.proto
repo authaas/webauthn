@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package authenticator;
+package webauthn.authenticator;
 
 enum Attachment {
   ATTACHMENT_UNSPECIFIED = 0;
