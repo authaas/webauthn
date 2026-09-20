@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2026-09-20
+#### Features
+- better namespacing - (7a8e76b) - Nathan Blair
+
+- - -
+
 ## 0.1.0 - 2026-09-20
 #### Features
 - initial release - (e6459c4) - Nathan Blair
