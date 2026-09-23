@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package webauthn.public_key_credential;
-
-import "webauthn/public_key_credential/cose_algorithm.proto";
-
-message Parameters {
-  CoseAlgorithm alg = 1;
-}

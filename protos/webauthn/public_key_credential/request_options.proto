@@ -6,14 +6,14 @@ import "webauthn/ceremony/challenge.proto";
 import "webauthn/extensions/request.proto";
 import "webauthn/public_key_credential/descriptor.proto";
 import "webauthn/relying_party/id.proto";
-import "webauthn/requirement/user_verification.proto";
+import "webauthn/relying_party/user_verification.proto";
 
 message RequestOptions {
   ceremony.Challenge challenge = 1;
   uint32 timeout = 2;
   relying_party.ID rp_id = 3;
   repeated Descriptor allow_credentials = 4;
-  requirement.UserVerification user_verification = 5;
+  relying_party.UserVerification user_verification = 5;
   repeated string hints = 6;
   extensions.Request extensions = 7;
 }

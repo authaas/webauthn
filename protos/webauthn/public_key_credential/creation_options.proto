@@ -2,25 +2,25 @@ syntax = "proto3";
 
 package webauthn.public_key_credential;
 
-import "webauthn/attestation/conveyance_preference.proto";
-import "webauthn/authenticator/selection_criteria.proto";
 import "webauthn/ceremony/challenge.proto";
 import "webauthn/extensions/request.proto";
 import "webauthn/public_key_credential/descriptor.proto";
-import "webauthn/public_key_credential/parameters.proto";
-import "webauthn/public_key_credential/rp_entity.proto";
 import "webauthn/public_key_credential/user_entity.proto";
+import "webauthn/relying_party/conveyance_preference.proto";
+import "webauthn/relying_party/entity.proto";
+import "webauthn/relying_party/parameters.proto";
+import "webauthn/relying_party/selection_criteria.proto";
 
 message CreationOptions {
   ceremony.Challenge challenge = 1;
   uint32 timeout = 2;
-  RpEntity rp = 3;
+  relying_party.Entity rp = 3;
   UserEntity user = 4;
-  repeated Parameters pub_key_cred_params = 5;
+  repeated relying_party.Parameters pub_key_cred_params = 5;
   repeated Descriptor exclude_credentials = 6;
-  authenticator.SelectionCriteria authenticator_selection = 7;
+  relying_party.SelectionCriteria authenticator_selection = 7;
   repeated string hints = 8;
-  attestation.ConveyancePreference attestation = 9;
+  relying_party.ConveyancePreference attestation = 9;
   repeated string attestation_formats = 10;
   extensions.Request extensions = 11;
 }

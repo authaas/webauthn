@@ -2,14 +2,14 @@ syntax = "proto3";
 
 package webauthn.ceremony;
 
-import "webauthn/authenticator/attachment.proto";
 import "webauthn/authenticator/attestation/response.proto";
 import "webauthn/credential/id.proto";
 import "webauthn/extensions/response.proto";
+import "webauthn/modality/attachment.proto";
 
 message Attestation {
   credential.ID credential_id = 1;
-  authenticator.Attachment authenticator_attachment = 2;
+  modality.Attachment authenticator_attachment = 2;
   extensions.Response client_extension_results = 3;
   authenticator.attestation.Response response = 4;
 }

@@ -6,7 +6,9 @@ modules:
 
 deps:
   - buf.build/authaas/identity:0.6.0
-  - buf.build/authaas/webauthn-credential:0.6.0
+  - buf.build/authaas/webauthn-credential:0.7.0
+  - buf.build/authaas/webauthn-modality:0.1.0
+  - buf.build/authaas/webauthn-rp:0.2.0
 
 lint:
   use:
