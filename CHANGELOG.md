@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.5.0 - 2026-09-23
+#### Features
+- use consistent suffixes - (47c94b2) - Nathan Blair
+
+- - -
+
 ## 0.4.0 - 2026-09-20
 #### Features
 - use mergeable namespace - (6802720) - Nathan Blair
