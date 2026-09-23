@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.7.0 - 2026-09-23
+#### Features
+- new dependencies - (108ccb9) - Nathan Blair
+
+- - -
+
 ## 0.6.0 - 2026-09-23
 #### Features
 - one more suffix fix - (5bc8977) - Nathan Blair
