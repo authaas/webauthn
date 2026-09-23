@@ -5,6 +5,6 @@ package webauthn.public_key_credential;
 import "webauthn/credential/id.proto";
 
 message Descriptor {
-  credential.ID credential = 1;
+  credential.ID credential_id = 1;
   repeated string transports = 2;
 }

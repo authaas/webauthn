@@ -5,7 +5,7 @@ modules:
     name: buf.build/authaas/webauthn
 
 deps:
-  - buf.build/authaas/identity:0.5.0
+  - buf.build/authaas/identity:0.6.0
   - buf.build/authaas/webauthn-credential:0.6.0
 
 lint:

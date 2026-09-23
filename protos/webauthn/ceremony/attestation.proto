@@ -8,7 +8,7 @@ import "webauthn/credential/id.proto";
 import "webauthn/extensions/response.proto";
 
 message Attestation {
-  credential.ID credential = 1;
+  credential.ID credential_id = 1;
   authenticator.Attachment authenticator_attachment = 2;
   extensions.Response client_extension_results = 3;
   authenticator.attestation.Response response = 4;
