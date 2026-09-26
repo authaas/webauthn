@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.8.0 - 2026-09-26
+#### Features
+- consolidate webauthn types again - (33655cd) - Nathan Blair
+#### Documentation
+- better docs - (4ab5a95) - Nathan Blair
+
+- - -
+
 ## 0.7.0 - 2026-09-23
 #### Features
 - new dependencies - (108ccb9) - Nathan Blair
