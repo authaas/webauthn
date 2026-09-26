@@ -2,8 +2,7 @@ syntax = "proto3";
 
 package webauthn.authenticator.assertion;
 
-// Signature is the authenticator's signature over the authenticator data
-// followed by the SHA-256 of the client data JSON.
+// Signature is the authenticator's signature of an assertion.
 message Signature {
   bytes bytes = 1;
 }
