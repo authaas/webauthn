@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package webauthn.client_data;
+
+// JSON is the client data of a ceremony, as the authenticator signed it.
+message JSON {
+  bytes bytes = 1;
+}

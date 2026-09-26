@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package webauthn.authenticator.assertion;
-
-// UserHandle is the WebAuthn user id a credential was registered under. An
-// authenticator may omit it.
-message UserHandle {
-  bytes bytes = 1;
-}

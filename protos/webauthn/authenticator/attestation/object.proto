@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package webauthn.authenticator.attestation;
+
+// Object is the attestation object of a registration, as the authenticator
+// returned it.
+message Object {
+  bytes bytes = 1;
+}

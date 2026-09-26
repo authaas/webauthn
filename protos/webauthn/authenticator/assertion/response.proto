@@ -2,15 +2,15 @@ syntax = "proto3";
 
 package webauthn.authenticator.assertion;
 
+import "identity/id.proto";
+import "webauthn/authenticator/assertion/data.proto";
 import "webauthn/authenticator/assertion/signature.proto";
-import "webauthn/authenticator/assertion/user_handle.proto";
-import "webauthn/authenticator/data.proto";
 import "webauthn/client_data/json.proto";
 
 // Authenticator response to the login ceremony
 message Response {
   client_data.JSON client_data_json = 1;
-  authenticator.Data authenticator_data = 2;
+  Data authenticator_data = 2;
   Signature signature = 3;
-  UserHandle user_handle = 4;
+  identity.ID user_handle = 4;
 }

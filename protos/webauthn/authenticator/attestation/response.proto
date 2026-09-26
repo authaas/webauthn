@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package webauthn.authenticator.attestation;
+
+import "webauthn/authenticator/attestation/object.proto";
+import "webauthn/client_data/json.proto";
+
+// Response is the authenticator's answer to the registration ceremony.
+message Response {
+  client_data.JSON client_data_json = 1;
+  Object attestation_object = 2;
+  // As the client reported them; may be empty.
+  repeated string transports = 3;
+}
